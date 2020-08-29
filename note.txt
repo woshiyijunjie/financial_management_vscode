@@ -1,0 +1,22 @@
+问题：
+1.路由跳转数据丢失，用 localStroge 又缺乏安全性 (暂时存储关键数据的问题)
+
+2.//这里有个问题：如何在FormDate 中取出非 file 文件的数据
+    let fd = new FormData()
+    fd.append('file', params.file)
+    const {data: res} = await this.$http.post(
+        '/upLoadPhoto'+'?id=1', 
+            fd, 
+        { "Content-Type": "multipart/form-data" }
+    )
+3.后台接受文件和处理文件的问题
+
+
+4.生命周期的问题  <keep-alive> 的坑
+
+
+
+
+
+
+
